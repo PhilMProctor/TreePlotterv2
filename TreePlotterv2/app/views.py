@@ -19,15 +19,15 @@ def home(request):
         }
     )
 
-def contact(request):
+def plot(request):
     """Renders the contact page."""
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/contact.html',
+        'app/plot.html',
         {
-            'title':'Contact',
-            'message':'Your contact page.',
+            'title':'Tree Plot',
+            'message':'Lets plot a tree',
             'year':datetime.now().year,
         }
     )

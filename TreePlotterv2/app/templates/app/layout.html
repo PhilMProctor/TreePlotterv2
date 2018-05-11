@@ -25,14 +25,14 @@
                 <ul class="nav navbar-nav">
                     <li><a href="{% url 'home' %}">Home</a></li>
                     <li><a href="{% url 'about' %}">About</a></li>
-                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                    <li><a href="{% url 'plot' %}">Plot</a></li>
                 </ul>
                 {% include 'app/loginpartial.html' %}
             </div>
         </div>
     </div>
 
-    <div class="container body-content">
+    <div class="container-fluid">
 {% block content %}{% endblock %}
         <hr/>
         <footer>
